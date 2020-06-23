@@ -527,28 +527,23 @@ function findLongestWord(str) {
   document.writeln("<br>"+findLongestWord("Web Development Tutorial"));
 
   //question13
-  var c;
-  var counting=0;
+ 
   function count(string,letter){
+      var letter=0;
       for (i=0;i<string.length;i++){
-          if (string[i]===letter){
-              counting=counting+1
-              c=string.indexOf("o")
-            
+          if (string.charAt(i)==letter){
+              letter+=1;
+              
           }
-          
+          }
+          return letter
 
       }
 
-      for (i=c;i<string.length;i++){
-        if (string[i]===letter){
-            counting=counting+1
-            return counting
-        }
         
 
-    }
-  }
+    
+  
   document.writeln("<br>"+"The occurence of of the letter is "+count("JSResourceS.com","o"));
 
   //question14
